@@ -1,0 +1,9 @@
+  import pandas as pd
+    url= "https//:people.sc.fsu.edu/~jburkardt/data/csv/hw_200.csv"
+    df = pd.read.csv(url)
+    # cleaning example
+    df.dropna(inplace=true)
+    df.coloumns= [col.strip().lower().replace('','')for col on df.columns
+      # save data cleaning
+                  df.to_csv("cleaned1_data.csv",index=false)
+                  print("Data cleaning and saved."
